@@ -13,7 +13,8 @@ ul {
   align-items: center;
   padding: 2em 0.5em;
   margin: 0;
-  height: 70px;
+  text-align: center;
+ 
 }
 
 ul img {
@@ -24,8 +25,9 @@ ul li:nth-of-type(3) {
   display: flex;
   align-items: center;
   align-self: stretch;
-  width: 7em;
   justify-content: center;
+  height: 50px;
+    width: 140px
 }
 
 li {
@@ -114,4 +116,19 @@ h4 {
 #articolo img {
   width: 100%;
 }
+
+
+@media screen and (max-width: 500px){
+    #ul{
+        flex-wrap: wrap;
+    }
+
+ul li:nth-of-type(3){
+    order: -1;
+}
+ul{
+    flex-wrap: wrap;
+}
+}
+    
 
